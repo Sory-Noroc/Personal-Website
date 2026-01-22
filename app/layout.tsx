@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sorin Noroc | Developer Portfolio",
+  title: "Sorin Noroc | Software Developer",
   description: "Portfolio of Sorin Noroc - Computer Engineering Student & Developer",
 };
 
