@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #0f172a; /* Slate 900 */
+  --foreground: #f8fafc; /* Slate 50 */
+  --primary: #38bdf8; /* Sky 400 */
+  --secondary: #94a3b8; /* Slate 400 */
+  --accent: #f43f5e; /* Rose 500 - for specific highlights */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Utilities if needed */
+.section-padding {
+  @apply py-20 px-4 md:px-8 max-w-7xl mx-auto;
+}

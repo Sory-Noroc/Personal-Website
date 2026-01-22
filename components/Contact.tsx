@@ -1,0 +1,60 @@
+"use client";
+import { Mail, Github, Linkedin, MapPin } from "lucide-react";
+
+export default function Contact() {
+  return (
+    <footer id="contact" className="bg-slate-900 border-t border-slate-800 pt-16 pb-8">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-12 mb-12">
+          <div>
+            <h2 className="text-3xl font-bold text-white mb-6">Let&#39;s Connect</h2>
+            <p className="text-slate-400 mb-8 leading-relaxed max-w-md">
+              I&#39;m always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+            </p>
+            
+            <div className="space-y-4">
+              <a href="mailto:sorinnoroc1@gmail.com" className="flex items-center gap-4 text-slate-300 hover:text-sky-400 transition-colors">
+                <div className="p-3 bg-slate-800 rounded-full">
+                  <Mail size={20} />
+                </div>
+                sorinnoroc1@gmail.com
+              </a>
+              <div className="flex items-center gap-4 text-slate-300">
+                <div className="p-3 bg-slate-800 rounded-full">
+                  <MapPin size={20} />
+                </div>
+                Iasi, Romania
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center items-start md:items-end">
+            <h3 className="text-xl font-bold text-white mb-6">Socials</h3>
+            <div className="flex gap-4">
+              <a 
+                href="https://github.com/Sory-Noroc" 
+                target="_blank"
+                className="p-4 bg-slate-800 rounded-lg hover:bg-sky-500 hover:text-white transition-all transform hover:-translate-y-1"
+              >
+                <Github size={24} />
+              </a>
+              {/* Placeholder for LinkedIn if you have one, otherwise generic */}
+              <a 
+                href="https://www.linkedin.com/in/noroc-sorin-88b5671b7/"
+                target="_blank"
+                className="p-4 bg-slate-800 rounded-lg hover:bg-sky-500 hover:text-white transition-all transform hover:-translate-y-1"
+                >
+                <Linkedin size={24} />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-slate-800 pt-8 text-center text-slate-500 text-sm">
+          <p>© {new Date().getFullYear()} Sorin Noroc. All rights reserved.</p>
+          <p className="mt-2">Built with Next.js & Tailwind CSS</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
