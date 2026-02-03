@@ -1,46 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
 import { Briefcase, MapPin, Calendar } from "lucide-react";
-
-const experiences = [
-    {
-    title: "Solar Panel Technician",
-    company: "Novaluxe Dynamics",
-    location: "Palma del Rio, Spain",
-    period: "Jun 2025 - Sep 2025",
-    description: "Provided maintenance of solar panels, participated in installation lifecycles, and managed teams. Increased company revenue by 10%."
-  },
-  {
-    title: "Solar Panel Technician",
-    company: "Sunnerg Group",
-    location: "Milano, Italy",
-    period: "Jun 2023 - Oct 2023",
-    description: "Enhanced electricity output by installing supporting structures for solar trackers. Collaborated with teams to ensure high standards."
-  },
-  {
-    title: "Data Miner and Analyst",
-    company: "Fiverr (Freelance)",
-    location: "Remote",
-    period: "Aug 2019 - May 2023",
-    description: "Developed web scraping projects using Python and Selenium. Delivered accurate results and received positive feedback for meeting deadlines."
-  },
-  {
-    title: "Busser / Food Runner",
-    company: "Casa Del Cabo",
-    location: "Eastham, USA",
-    period: "Aug 2024 - Sep 2024",
-    description: "Recognized for exceptional teamwork and efficiency during peak hours in a fast-paced environment."
-  },
-  {
-    title: "House Attendant",
-    company: "Chatham Bars Inn",
-    location: "Eastham, USA",
-    period: "Jun 2024 - Sep 2024",
-    description: "Maintained high standards of cleanliness and organization for a premium hospitality venue."
-  }
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Experience() {
+  const { t } = useLanguage();
+
   return (
     <section id="experience" className="section-padding bg-slate-800/30">
       <motion.div
@@ -50,7 +15,7 @@ export default function Experience() {
         transition={{ duration: 0.5 }}
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          Work <span className="text-sky-400">Experience</span>
+          {t.experience.title} <span className="text-sky-400">{t.experience.titleHighlight}</span>
         </h2>
 
         <div className="relative max-w-4xl mx-auto">
@@ -58,7 +23,7 @@ export default function Experience() {
           <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-slate-700 top-0"></div>
 
           <div className="space-y-12">
-            {experiences.map((exp, index) => (
+            {t.experience.jobs.map((exp, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}

@@ -1,8 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
 import { Award, Heart, User } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function About() {
+  const { t } = useLanguage();
+
   return (
     <section id="about" className="section-padding bg-slate-800/30">
       <motion.div
@@ -12,34 +15,32 @@ export default function About() {
         transition={{ duration: 0.5 }}
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          About <span className="text-sky-400">Me</span>
+          {t.about.title} <span className="text-sky-400">{t.about.titleHighlight}</span>
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-white">
-              Driven by Curiosity, Defined by Code.
+              {t.about.subtitle}
             </h3>
             <p className="text-slate-300 leading-relaxed">
-              I am a Computer Engineering and Automatics student at TUIASI "Gheorghe Asachi" in Iasi. 
-              My journey started with a simple curiosity about how things work, which quickly evolved into a passion for creating software.
+              {t.about.description1}
             </p>
             <p className="text-slate-300 leading-relaxed">
-              Whether it's optimizing code, building intuitive Android apps, or automating boring tasks with Python scripts, 
-              I love the feeling of solving a puzzle. My work experience spans from freelancing on Fiverr to hands-on technical roles in Italy, Spain, and the USA.
+              {t.about.description2}
             </p>
             
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="p-4 bg-slate-800 rounded-lg border border-slate-700">
                 <Award className="text-sky-400 mb-2" size={24} />
-                <h4 className="font-bold text-white">Experience</h4>
-                <p className="text-sm text-slate-400">Multiple International roles</p>
+                <h4 className="font-bold text-white">{t.about.experienceTitle}</h4>
+                <p className="text-sm text-slate-400">{t.about.experienceDesc}</p>
               </div>
               <div className="p-4 bg-slate-800 rounded-lg border border-slate-700">
                 <User className="text-sky-400 mb-2" size={24} />
-                <h4 className="font-bold text-white">Education</h4>
-                <p className="text-sm text-slate-400">Computer Engineering Student</p>
+                <h4 className="font-bold text-white">{t.about.educationTitle}</h4>
+                <p className="text-sm text-slate-400">{t.about.educationDesc}</p>
               </div>
             </div>
           </div>
@@ -50,33 +51,19 @@ export default function About() {
             <div className="relative bg-slate-900 rounded-2xl p-6 border border-slate-800">
                 <div className="flex items-center gap-2 mb-4">
                     <Heart className="text-rose-500" />
-                    <h3 className="text-xl font-bold text-white">Beyond Coding</h3>
+                    <h3 className="text-xl font-bold text-white">{t.about.beyondCodingTitle}</h3>
                 </div>
                 
                 <div className="space-y-4">
-                    <div className="bg-slate-800 p-4 rounded-lg">
-                        <span className="text-xs font-bold text-sky-400 uppercase tracking-wider">Memory #1</span>
-                        <h4 className="font-bold text-white mt-1">Skydiving Adventure</h4>
-                        <p className="text-sm text-slate-400 mt-2">
-                           "Jumping out of a plane taught me that fear is just a reaction, but courage is a decision. The adrenaline rush is unmatched!"
-                        </p>
-                    </div>
-
-                    <div className="bg-slate-800 p-4 rounded-lg">
-                        <span className="text-xs font-bold text-sky-400 uppercase tracking-wider">Passion</span>
-                        <h4 className="font-bold text-white mt-1">Car Enthusiast</h4>
-                        <p className="text-sm text-slate-400 mt-2">
-                            I've always been fascinated by mechanics. Working on cars is my way of debugging the physical world.
-                        </p>
-                    </div>
-
-                     <div className="bg-slate-800 p-4 rounded-lg">
-                        <span className="text-xs font-bold text-sky-400 uppercase tracking-wider">Hobby</span>
-                        <h4 className="font-bold text-white mt-1">Cycling</h4>
-                        <p className="text-sm text-slate-400 mt-2">
-                           My escape from the screen. It helps me clear my mind and find new perspectives.
-                        </p>
-                    </div>
+                    {t.about.hobbies.map((hobby, index) => (
+                        <div key={index} className="bg-slate-800 p-4 rounded-lg">
+                            <span className="text-xs font-bold text-sky-400 uppercase tracking-wider">{hobby.tag}</span>
+                            <h4 className="font-bold text-white mt-1">{hobby.title}</h4>
+                            <p className="text-sm text-slate-400 mt-2">
+                                {hobby.description}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
           </div>

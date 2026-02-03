@@ -2,8 +2,11 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Mail, FileText } from "lucide-react";
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative pt-20">
       {/* Background elements */}
@@ -16,18 +19,16 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-xl md:text-2xl text-sky-400 font-semibold mb-4">Hello, I'm</h2>
+          <h2 className="text-xl md:text-2xl text-sky-400 font-semibold mb-4">{t.hero.greeting}</h2>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white tracking-tight">
             Sorin Noroc
           </h1>
-          <h3 className="text-2xl md:text-4xl text-slate-400 mb-8 h-[60px]">
-            Computer Engineering Student & <span className="text-sky-400">Developer</span>
+          <h3 className="text-2xl md:text-4xl text-slate-400 mb-8 min-h-[60px] md:h-auto">
+            {t.hero.rolePart1}<span className="text-sky-400">{t.hero.roleHighlight}</span>
           </h3>
           
           <p className="max-w-2xl mx-auto text-slate-400 text-lg mb-10 leading-relaxed">
-            Passionate about building software that solves real-world problems. 
-            From Android apps and Game Dev to Web Scraping and automation. 
-            Based in Iasi, Romania.
+            {t.hero.description}
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -35,7 +36,7 @@ export default function Hero() {
               href="#projects"
               className="px-8 py-3 bg-sky-500 hover:bg-sky-600 text-white rounded-full font-medium transition-all shadow-lg shadow-sky-500/20"
             >
-              View My Work
+              {t.hero.viewWork}
             </Link>
             <a 
               href="/FullCV.pdf" 
@@ -43,7 +44,7 @@ export default function Hero() {
               className="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 rounded-full font-medium transition-all flex items-center gap-2"
             >
               <FileText size={18} />
-              Download CV
+              {t.hero.downloadCV}
             </a>
           </div>
 

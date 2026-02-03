@@ -1,15 +1,18 @@
 "use client";
 import { Mail, Github, Linkedin, MapPin } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Contact() {
+  const { t } = useLanguage();
+
   return (
     <footer id="contact" className="bg-slate-900 border-t border-slate-800 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 mb-12">
           <div>
-            <h2 className="text-3xl font-bold text-white mb-6">Let&#39;s Connect</h2>
+            <h2 className="text-3xl font-bold text-white mb-6">{t.contact.title}</h2>
             <p className="text-slate-400 mb-8 leading-relaxed max-w-md">
-              I&#39;m always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+              {t.contact.description}
             </p>
             
             <div className="space-y-4">
@@ -29,7 +32,7 @@ export default function Contact() {
           </div>
 
           <div className="flex flex-col justify-center items-start md:items-end">
-            <h3 className="text-xl font-bold text-white mb-6">Socials</h3>
+            <h3 className="text-xl font-bold text-white mb-6">{t.contact.socialsTitle}</h3>
             <div className="flex gap-4">
               <a 
                 href="https://github.com/Sory-Noroc" 
@@ -51,8 +54,8 @@ export default function Contact() {
         </div>
 
         <div className="border-t border-slate-800 pt-8 text-center text-slate-500 text-sm">
-          <p>© {new Date().getFullYear()} Sorin Noroc. All rights reserved.</p>
-          <p className="mt-2">Built with Next.js & Tailwind CSS</p>
+          <p>{t.contact.copyright}</p>
+          <p className="mt-2">{t.contact.builtWith}</p>
         </div>
       </div>
     </footer>

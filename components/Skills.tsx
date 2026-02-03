@@ -1,14 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
-
-const skills = [
-  { category: "Languages", items: ["Python", "C++", "C", "Kotlin", "SQL", "HTML/CSS", "JavaScript"] },
-  { category: "Frameworks & Tools", items: ["Android Studio", "Selenium", "SDL", "Gradle", "Next.js", "Tailwind CSS"] },
-  { category: "Hardware & IoT", items: ["Arduino", "Raspberry Pi", "Renewable Energy Tech"] },
-  { category: "Databases", items: ["MySQL", "MongoDB", "MSSQL"] },
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Skills() {
+  const { t } = useLanguage();
+
   return (
     <section id="skills" className="section-padding">
       <motion.div
@@ -18,11 +14,11 @@ export default function Skills() {
         transition={{ duration: 0.5 }}
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          Technical <span className="text-sky-400">Skills</span>
+          {t.skills.title} <span className="text-sky-400">{t.skills.titleHighlight}</span>
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {skills.map((skillGroup, index) => (
+          {t.skills.categories.map((skillGroup, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}

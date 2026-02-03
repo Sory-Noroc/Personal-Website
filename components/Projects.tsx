@@ -2,35 +2,11 @@
 import { motion } from "framer-motion";
 import { Github, Code } from "lucide-react";
 import Image from "next/image";
-
-const projects = [
-  {
-    title: "Space Shooter",
-    description: "A C++ game developed using the SDL library. Features include enemy battleships, score tracking, and optimized game loops. Demonstrates low-level memory management and game logic implementation.",
-    tech: ["C++", "SDL", "Game Dev"],
-    github: "https://github.com/Sory-Noroc/space-shooter",
-    image: "/space_shooter_image.png",
-    featured: true
-  },
-  {
-    title: "LibroRead",
-    description: "An intuitive Android e-book reader app. Features automatic scanning of device files, customizable reading themes, and a user-friendly interface built with Kotlin and XML.",
-    tech: ["Android", "Kotlin", "XML", "Gradle"],
-    github: "https://github.com/Sory-Noroc/LibroRead",
-    image: "/ebook_kindle.jpg",
-    featured: true
-  },
-  {
-    title: "ElectriCost",
-    description: "Android utility app for calculating electricity costs of various appliances. Helps users track consumption and estimate bills. Built with modern Android guidelines.",
-    tech: ["Kotlin", "Android", "Utility"],
-    github: "https://github.com/Sory-Noroc/ElectricCalculator",
-    image: "/lightning.jpg",
-    featured: false
-  }
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Projects() {
+  const { t } = useLanguage();
+
   return (
     <section id="projects" className="section-padding">
       <motion.div
@@ -40,11 +16,11 @@ export default function Projects() {
         transition={{ duration: 0.5 }}
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          Featured <span className="text-sky-400">Projects</span>
+          {t.projects.title} <span className="text-sky-400">{t.projects.titleHighlight}</span>
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {t.projects.items.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
@@ -91,7 +67,7 @@ export default function Projects() {
                     target="_blank" 
                     className="inline-flex items-center justify-center gap-2 w-full py-2 bg-slate-800 hover:bg-sky-600 text-white rounded-lg transition-all font-medium border border-slate-700 hover:border-sky-500"
                 >
-                    <Github size={18} /> View Code
+                    <Github size={18} /> {t.projects.viewCode}
                 </a>
               </div>
             </motion.div>
