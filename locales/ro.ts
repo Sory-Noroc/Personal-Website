@@ -174,7 +174,8 @@ export const ro: Translations = {
         text: "Great experience working with this seller, highly recommended. Will be back for more on my next project.",
         projectType: "Android App Development"
       }
-    ]
+    ],
+    viewOnFiverr: "Verifică pe Fiverr"
   },
   contact: {
     title: "Hai să luăm legătura",

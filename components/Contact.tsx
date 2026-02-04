@@ -1,5 +1,5 @@
 "use client";
-import { Mail, Github, Linkedin, MapPin } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin, Link as LinkIcon } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Contact() {
@@ -38,16 +38,32 @@ export default function Contact() {
                 href="https://github.com/Sory-Noroc" 
                 target="_blank"
                 className="p-4 bg-slate-800 rounded-lg hover:bg-sky-500 hover:text-white transition-all transform hover:-translate-y-1"
+                aria-label="GitHub"
               >
                 <Github size={24} />
               </a>
-              {/* Placeholder for LinkedIn if you have one, otherwise generic */}
               <a 
                 href="https://www.linkedin.com/in/noroc-sorin-88b5671b7/"
                 target="_blank"
                 className="p-4 bg-slate-800 rounded-lg hover:bg-sky-500 hover:text-white transition-all transform hover:-translate-y-1"
-                >
+                aria-label="LinkedIn"
+              >
                 <Linkedin size={24} />
+              </a>
+              <a 
+                href="https://www.fiverr.com/s/pdV4yyl" 
+                target="_blank"
+                className="p-4 bg-[#1DBF73] rounded-lg hover:bg-[#19a463] text-white transition-all transform hover:-translate-y-1"
+                aria-label="Fiverr"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                   <circle cx="12" cy="12" r="10"/>
+                   <path d="M9 12h6"/>
+                   <path d="M12 9v6"/>
+                   {/* Custom F or simple link icon substitute since Lucide doesn't have Fiverr */}
+                   <path d="M8 8v8"/>
+                   <path d="M16 8v8"/>
+                </svg>
               </a>
             </div>
           </div>

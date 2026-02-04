@@ -172,7 +172,8 @@ export const en = {
         text: "Great experience working with this seller, highly recommended. Will be back for more on my next project.",
         projectType: "Android App Development"
       }
-    ]
+    ],
+    viewOnFiverr: "Verify on Fiverr"
   },
   contact: {
     title: "Let's Connect",

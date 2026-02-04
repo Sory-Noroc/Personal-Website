@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight, Quote, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -167,7 +167,7 @@ export default function Testimonials() {
         </div>
 
         {/* Indicators */}
-        <div className="flex justify-center gap-3 mt-12">
+        <div className="flex justify-center gap-3 mt-12 mb-8">
           {t.testimonials.reviews.map((_, index) => (
             <button
               key={index}
@@ -181,6 +181,19 @@ export default function Testimonials() {
               aria-label={`Go to review ${index + 1}`}
             />
           ))}
+        </div>
+
+        {/* Fiverr Verification Button */}
+        <div className="flex justify-center">
+            <a
+              href="https://www.fiverr.com/s/pdV4yyl" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#1DBF73] hover:bg-[#19a463] text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              {t.testimonials.viewOnFiverr}
+              <ExternalLink size={18} />
+            </a>
         </div>
       </div>
     </section>
