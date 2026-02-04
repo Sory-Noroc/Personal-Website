@@ -7,6 +7,7 @@ export const ro: Translations = {
     skills: "Abilități",
     experience: "Experiență",
     projects: "Proiecte",
+    testimonials: "Testimoniale",
     contact: "Contact",
   },
   hero: {
@@ -125,6 +126,53 @@ export const ro: Translations = {
         github: "https://github.com/Sory-Noroc/ElectricCalculator",
         image: "/lightning.jpg",
         featured: false
+      }
+    ]
+  },
+  testimonials: {
+    title: "Testimoniale",
+    titleHighlight: "Clienți",
+    description: "Feedback de la clienți mulțumiți de pe Fiverr.",
+    reviews: [
+      {
+        name: "jaaprozemeijer",
+        country: "Netherlands",
+        countryCode: "NL",
+        rating: 5,
+        text: "Nice and fast thanks",
+        projectType: "Scripting"
+      },
+      {
+        name: "milanus",
+        country: "United States",
+        countryCode: "US",
+        rating: 5,
+        text: "Just the Best of the Best. This is my 2nd order! Recommended for sure",
+        projectType: "Data Scraping"
+      },
+      {
+        name: "milanus",
+        country: "United States",
+        countryCode: "US",
+        rating: 5,
+        text: "This gentlemen is very cooperative and follow the directions well. I am happy and will order again. Good Job He built me a web research toll using Python. He is really knowledgeable. I recommend.",
+        projectType: "Data Scraping"
+      },
+      {
+        name: "pranishs320",
+        country: "United States",
+        countryCode: "US",
+        rating: 5,
+        text: "Helpful/ fast/ just very good at what he does!!!",
+        projectType: "Data Scraping"
+      },
+      {
+        name: "pleighs",
+        country: "New Zealand",
+        countryCode: "NZ",
+        rating: 5,
+        text: "Great experience working with this seller, highly recommended. Will be back for more on my next project.",
+        projectType: "Android App Development"
       }
     ]
   },
