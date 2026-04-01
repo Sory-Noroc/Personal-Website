@@ -39,7 +39,7 @@ export default function Hero() {
               {t.hero.viewWork}
             </Link>
             <a 
-              href="/FullCV.pdf" 
+              href="/Overleaf_CV.pdf" 
               target="_blank"
               className="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 rounded-full font-medium transition-all flex items-center gap-2"
             >
