@@ -95,14 +95,6 @@ export const en = {
         github: "https://github.com/Sory-Noroc/Smart-Interview-Coach",
         image: "/ui_dashboard_feedback_1.png",
         featured: true
-      },
-      {
-        title: "ElectriCost",
-        description: "Android utility app for calculating electricity costs of various appliances. Helps users track consumption and estimate bills. Built with modern Android guidelines.",
-        tech: ["Kotlin", "Android", "Utility"],
-        github: "https://github.com/Sory-Noroc/ElectricCalculator",
-        image: "/lightning.jpg",
-        featured: false
       }
     ]
   },

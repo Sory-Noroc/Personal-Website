@@ -97,14 +97,6 @@ export const ro: Translations = {
         github: "https://github.com/Sory-Noroc/Smart-Interview-Coach",
         image: "/ui_dashboard_feedback_1.png",
         featured: true
-      },
-      {
-        title: "ElectriCost",
-        description: "Aplicație utilitară Android pentru calcularea costurilor de electricitate ale diverselor electrocasnice. Ajută utilizatorii să urmărească consumul și să estimeze facturile. Construită cu ghiduri moderne Android.",
-        tech: ["Kotlin", "Android", "Utility"],
-        github: "https://github.com/Sory-Noroc/ElectricCalculator",
-        image: "/lightning.jpg",
-        featured: false
       }
     ]
   },
