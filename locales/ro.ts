@@ -63,38 +63,17 @@ export const ro: Translations = {
     jobs: [
       {
         title: "Tehnician Panouri Solare",
-        company: "Novaluxe Dynamics",
-        location: "Palma del Rio, Spania",
-        period: "Iun 2025 - Sep 2025",
-        description: "Asigurarea mentenanței panourilor solare, participarea la ciclurile de instalare și gestionarea echipelor. Creșterea veniturilor companiei cu 10%."
-      },
-      {
-        title: "Tehnician Panouri Solare",
         company: "Sunnerg Group",
         location: "Milano, Italia",
         period: "Iun 2023 - Oct 2023",
         description: "Îmbunătățirea producției de electricitate prin instalarea structurilor de susținere pentru trackere solare. Colaborarea cu echipele pentru asigurarea standardelor înalte."
       },
       {
-        title: "Data Miner și Analist",
+        title: "Data Analist",
         company: "Fiverr (Freelance)",
         location: "Remote",
         period: "Aug 2019 - Mai 2023",
-        description: "Dezvoltarea proiectelor de web scraping folosind Python și Selenium. Livrarea rezultatelor precise și primirea de feedback pozitiv pentru respectarea termenelor limită."
-      },
-      {
-        title: "Busser / Food Runner",
-        company: "Casa Del Cabo",
-        location: "Eastham, SUA",
-        period: "Aug 2024 - Sep 2024",
-        description: "Recunoscut pentru munca în echipă excepțională și eficiență în timpul orelor de vârf într-un mediu dinamic."
-      },
-      {
-        title: "House Attendant",
-        company: "Chatham Bars Inn",
-        location: "Eastham, SUA",
-        period: "Iun 2024 - Sep 2024",
-        description: "Menținerea standardelor înalte de curățenie și organizare pentru o locație de ospitalitate premium."
+        description: "Dezvoltarea proiectelor de web parsing folosind Python și Selenium. Livrarea rezultatelor precise și primirea de feedback pozitiv pentru respectarea termenelor limită."
       }
     ]
   },

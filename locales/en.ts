@@ -29,9 +29,9 @@ export const en = {
     beyondCodingTitle: "Beyond Coding",
     hobbies: [
       {
-        tag: "Memory #1",
+        tag: "Memories",
         title: "Skydiving Adventure",
-        description: "\"Jumping out of a plane taught me that fear is just a reaction, but courage is a decision. The adrenaline rush is unmatched!\""
+        description: "\"Jumping out of a plane taught me that there's more to like than beer.\""
       },
       {
         tag: "Passion",
@@ -41,7 +41,7 @@ export const en = {
       {
         tag: "Hobby",
         title: "Cycling",
-        description: "My escape from the screen. It helps me clear my mind and find new perspectives."
+        description: "My escape from the screen. It helps me clear my mind and find new perspectives. Lately it was replaced by cruising."
       }
     ]
   },
@@ -61,13 +61,6 @@ export const en = {
     jobs: [
       {
         title: "Solar Panel Technician",
-        company: "Novaluxe Dynamics",
-        location: "Palma del Rio, Spain",
-        period: "Jun 2025 - Sep 2025",
-        description: "Provided maintenance of solar panels, participated in installation lifecycles, and managed teams. Increased company revenue by 10%."
-      },
-      {
-        title: "Solar Panel Technician",
         company: "Sunnerg Group",
         location: "Milano, Italy",
         period: "Jun 2023 - Oct 2023",
@@ -78,22 +71,8 @@ export const en = {
         company: "Fiverr (Freelance)",
         location: "Remote",
         period: "Aug 2019 - May 2023",
-        description: "Developed web scraping projects using Python and Selenium. Delivered accurate results and received positive feedback for meeting deadlines."
+        description: "Developed web parsing projects using Python and Selenium. Delivered accurate results and received positive feedback for meeting deadlines."
       },
-      {
-        title: "Busser / Food Runner",
-        company: "Casa Del Cabo",
-        location: "Eastham, USA",
-        period: "Aug 2024 - Sep 2024",
-        description: "Recognized for exceptional teamwork and efficiency during peak hours in a fast-paced environment."
-      },
-      {
-        title: "House Attendant",
-        company: "Chatham Bars Inn",
-        location: "Eastham, USA",
-        period: "Jun 2024 - Sep 2024",
-        description: "Maintained high standards of cleanliness and organization for a premium hospitality venue."
-      }
     ]
   },
   projects: {
