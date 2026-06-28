@@ -89,11 +89,11 @@ export const en = {
         featured: true
       },
       {
-        title: "JobAcer - AI Interview Coach",
-        description: "An application launched in AWS that uses AI to provide test interview sessions. You can record your answers and receive feedback from the AI.",
-        tech: ["AWS", "Gemini AI", "Kotlin", "React", "TypeScript", "Tailwind CSS"],
-        github: "https://github.com/Sory-Noroc/Smart-Interview-Coach",
-        image: "/ui_dashboard_feedback_1.png",
+        title: "LibroRead",
+        description: "An intuitive Android e-book reader app. Features automatic scanning of device files, customizable reading themes, and a user-friendly interface built with Kotlin and XML.",
+        tech: ["Android", "Kotlin", "XML", "Gradle"],
+        github: "https://github.com/Sory-Noroc/LibroRead",
+        image: "/ebook_kindle.jpg",
         featured: true
       }
     ]
