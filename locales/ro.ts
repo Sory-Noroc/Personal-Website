@@ -91,11 +91,11 @@ export const ro: Translations = {
         featured: true
       },
       {
-        title: "LibroRead",
-        description: "O aplicație intuitivă de citit e-book-uri pentru Android. Include scanarea automată a fișierelor, teme de citit personalizabile și o interfață prietenoasă construită cu Kotlin și XML.",
-        tech: ["Kotlin", "Android", "XML", "Gradle"],
-        github: "https://github.com/Sory-Noroc/LibroRead",
-        image: "/ebook_kindle.jpg",
+        title: "JobAcer - AI Interview Coach",
+        description: "O aplicație lansată în AWS ce utilizează AI pentru a oferi sesiuni de interviuri simulate. Ai posibilitatea să îți înregistrezi răspunsurile și să primești feedback din partea AI-ului.",
+        tech: ["AWS", "Gemini AI", "Kotlin", "React", "TypeScript", "Tailwind CSS"],
+        github: "https://github.com/Sory-Noroc/Smart-Interview-Coach",
+        image: "/ui_dashboard_feedback_1.png",
         featured: true
       },
       {
