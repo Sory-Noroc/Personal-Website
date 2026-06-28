@@ -97,6 +97,14 @@ export const ro: Translations = {
         github: "https://github.com/Sory-Noroc/LibroRead",
         image: "/ebook_kindle.jpg",
         featured: true
+      },
+      {
+        title: "ElectriCost",
+        description: "Aplicație utilitară Android pentru calcularea costurilor de electricitate ale diverselor electrocasnice. Ajută utilizatorii să urmărească consumul și să estimeze facturile. Construită cu ghiduri moderne Android.",
+        tech: ["Kotlin", "Android", "Utility"],
+        github: "https://github.com/Sory-Noroc/ElectricCalculator",
+        image: "/lightning.jpg",
+        featured: false
       }
     ]
   },

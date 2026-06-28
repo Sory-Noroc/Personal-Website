@@ -95,6 +95,14 @@ export const en = {
         github: "https://github.com/Sory-Noroc/LibroRead",
         image: "/ebook_kindle.jpg",
         featured: true
+      },
+      {
+        title: "ElectriCost",
+        description: "Android utility app for calculating electricity costs of various appliances. Helps users track consumption and estimate bills. Built with modern Android guidelines.",
+        tech: ["Kotlin", "Android", "Utility"],
+        github: "https://github.com/Sory-Noroc/ElectricCalculator",
+        image: "/lightning.jpg",
+        featured: false
       }
     ]
   },
