@@ -101,7 +101,7 @@ export const en = {
         description: "A web app combining REST/gRPC protocols for low latency communication. Each microservice is encapsulated in a Docker container.",
         tech: ["Spring Boot", "FastAPI", "Python", "Kotlin", "RESTful", "gRPC", "MongoDB", "MariaDB", "Docker"],
         github: "https://github.com/Sory-Noroc/Ticket-Manager-App",
-        image: "",
+        image: "/events_architecture.png",
         featured: true
       },
       {
