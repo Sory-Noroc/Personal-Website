@@ -82,20 +82,28 @@ export const ro: Translations = {
     titleHighlight: "Reprezentative",
     viewCode: "Vezi Codul",
     items: [
-      {
-        title: "Space Shooter",
-        description: "Un joc C++ dezvoltat folosind biblioteca SDL. Include nave inamice, urmărirea scorului și bucle de joc optimizate. Demonstrează managementul memoriei la nivel scăzut și implementarea logicii de joc.",
-        tech: ["C++", "SDL", "Game Dev"],
-        github: "https://github.com/Sory-Noroc/space-shooter",
-        image: "/space_shooter_image.png",
-        featured: true
-      },
+      // {
+      //   title: "Space Shooter",
+      //   description: "Un joc C++ dezvoltat folosind biblioteca SDL. Include nave inamice, urmărirea scorului și bucle de joc optimizate. Demonstrează managementul memoriei la nivel scăzut și implementarea logicii de joc.",
+      //   tech: ["C++", "SDL", "Game Dev"],
+      //   github: "https://github.com/Sory-Noroc/space-shooter",
+      //   image: "/space_shooter_image.png",
+      //   featured: true
+      // },
       {
         title: "JobAcer - AI Interview Coach",
         description: "O aplicație lansată în AWS ce utilizează AI pentru a oferi sesiuni de interviuri simulate. Ai posibilitatea să îți înregistrezi răspunsurile și să primești feedback din partea AI-ului.",
         tech: ["AWS", "Gemini AI", "Kotlin", "React", "TypeScript", "Tailwind CSS"],
         github: "https://github.com/Sory-Noroc/Smart-Interview-Coach",
         image: "/ui_dashboard_feedback_1.png",
+        featured: true
+      },
+      {
+        title: "Event Tickets - Microservices App",
+        description: "O aplicație web ce combină protocoalele REST/gRPC pentru latență scăzută. Fiecare microserviciu este încapsulat într-un container Docker.",
+        tech: ["Spring Boot", "FastAPI", "Python", "Kotlin", "RESTful", "gRPC", "MongoDB", "MariaDB", "Docker"],
+        github: "https://github.com/Sory-Noroc/Ticket-Manager-App",
+        image: "/events_architecture.png",
         featured: true
       },
       {

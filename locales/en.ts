@@ -80,20 +80,28 @@ export const en = {
     titleHighlight: "Projects",
     viewCode: "View Code",
     items: [
-      {
-        title: "Space Shooter",
-        description: "A C++ game developed using the SDL library. Features include enemy battleships, score tracking, and optimized game loops. Demonstrates low-level memory management and game logic implementation.",
-        tech: ["C++", "SDL", "Game Dev"],
-        github: "https://github.com/Sory-Noroc/space-shooter",
-        image: "/space_shooter_image.png",
-        featured: true
-      },
+      // {
+      //   title: "Space Shooter",
+      //   description: "A C++ game developed using the SDL library. Features include enemy battleships, score tracking, and optimized game loops. Demonstrates low-level memory management and game logic implementation.",
+      //   tech: ["C++", "SDL", "Game Dev"],
+      //   github: "https://github.com/Sory-Noroc/space-shooter",
+      //   image: "/space_shooter_image.png",
+      //   featured: true
+      // },
       {
         title: "JobAcer - AI Interview Coach",
         description: "An application launched in AWS that uses AI to provide test interview sessions. You can record your answers and receive feedback from the AI.",
         tech: ["AWS", "Gemini AI", "Kotlin", "React", "TypeScript", "Tailwind CSS"],
         github: "https://github.com/Sory-Noroc/Smart-Interview-Coach",
         image: "/ui_dashboard_feedback_1.png",
+        featured: true
+      },
+      {
+        title: "Events - Microservices App",
+        description: "A web app combining REST/gRPC protocols for low latency communication. Each microservice is encapsulated in a Docker container.",
+        tech: ["Spring Boot", "FastAPI", "Python", "Kotlin", "RESTful", "gRPC", "MongoDB", "MariaDB", "Docker"],
+        github: "https://github.com/Sory-Noroc/Ticket-Manager-App",
+        image: "",
         featured: true
       },
       {
