@@ -43,7 +43,7 @@ export default function Contact() {
                 <Github size={24} />
               </a>
               <a 
-                href="https://www.linkedin.com/in/noroc-sorin-88b5671b7/"
+                href="https://www.linkedin.com/in/sorin-noroc/"
                 target="_blank"
                 className="p-4 bg-slate-800 rounded-lg hover:bg-sky-500 hover:text-white transition-all transform hover:-translate-y-1"
                 aria-label="LinkedIn"

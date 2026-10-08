@@ -12,7 +12,7 @@ export const ro: Translations = {
   },
   hero: {
     greeting: "Salut, sunt",
-    rolePart1: "Student la Calculatoare & ",
+    rolePart1: "Inginer Software & ",
     roleHighlight: "Dezvoltator",
     description: "Pasionat de construirea de software care rezolvă probleme reale. De la aplicații Android și Game Dev la Web Scraping și automatizare. Bazat în Iași, România.",
     viewWork: "Vezi Lucrările Mele",
@@ -22,7 +22,7 @@ export const ro: Translations = {
     title: "Despre",
     titleHighlight: "Mine",
     subtitle: "Motivat de curiozitate, definit de cod.",
-    description1: "Sunt student la Facultatea de Automatică și Calculatoare din Iași (TUIASI), pasionat de dezvoltarea software și rezolvarea problemelor complexe. Călătoria mea a început cu simpla curiozitate despre cum funcționează lucrurile, care a evoluat rapid într-o pasiune pentru crearea de software.",
+    description1: "Sunt absolvent al Facultății de Automatică și Calculatoare din Iași (TUIASI), pasionat de dezvoltarea software și rezolvarea problemelor complexe. Călătoria mea a început cu simpla curiozitate despre cum funcționează lucrurile, care a evoluat rapid într-o pasiune pentru crearea de software.",
     description2: "Fie că e vorba de optimizarea codului, construirea de aplicații Android intuitive sau automatizarea sarcinilor plictisitoare cu scripturi Python, iubesc sentimentul de a rezolva un puzzle. Experiența mea de lucru variază de la freelancing pe Fiverr la roluri tehnice practice în Italia, Spania și SUA.",
     experienceTitle: "Experiență",
     experienceDesc: "Roluri internaționale multiple",

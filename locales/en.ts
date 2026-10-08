@@ -10,7 +10,7 @@ export const en = {
   },
   hero: {
     greeting: "Hello, I'm",
-    rolePart1: "Computer Engineering Student & ",
+    rolePart1: "Computer Engineer & ",
     roleHighlight: "Developer",
     description: "Passionate about building software that solves real-world problems. From Android apps and Game Dev to Web Scraping and automation. Based in Iasi, Romania.",
     viewWork: "View My Work",
@@ -20,7 +20,7 @@ export const en = {
     title: "About",
     titleHighlight: "Me",
     subtitle: "Driven by Curiosity, Defined by Code.",
-    description1: "I am a Computer Engineering and Automatics student at TUIASI \"Gheorghe Asachi\" in Iasi. My journey started with a simple curiosity about how things work, which quickly evolved into a passion for creating software.",
+    description1: "I am a Computer Engineering and Automatics graduate from TUIASI \"Gheorghe Asachi\" in Iasi. My journey started with a simple curiosity about how things work, which quickly evolved into a passion for creating software.",
     description2: "Whether it's optimizing code, building intuitive Android apps, or automating boring tasks with Python scripts, I love the feeling of solving a puzzle. My work experience spans from freelancing on Fiverr to hands-on technical roles in Italy, Spain, and the USA.",
     experienceTitle: "Experience",
     experienceDesc: "Multiple International roles",
